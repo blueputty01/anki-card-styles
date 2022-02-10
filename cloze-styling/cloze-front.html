@@ -1,7 +1,5 @@
 <div class="clozefield">{{edit:cloze:Text}}</div>
 
-{{Tags}}
-
 <!--tts en_US voices=Apple_Samantha speed=1.4:cloze:Text-->
 
 <div class="timer" id="s2"></div>
@@ -50,25 +48,4 @@
 
 {{#Tags}}
 <div id="tags-container">{{clickable::Tags}}</div>
-<script>
-  var tagContainer = document.getElementById("tags-container");
-  if (tagContainer.childElementCount == 0) {
-    var tagList = tagContainer.innerHTML.split(" ");
-    var kbdList = [];
-    var newTagContent = document.createElement("div");
-
-    for (var i = 0; i < tagList.length; i++) {
-      var newTag = document.createElement("kbd");
-      newTag.innerHTML = tagList[i];
-      newTagContent.append(newTag);
-    }
-    tagContainer.innerHTML = newTagContent.innerHTML;
-    tagContainer.style.cursor = "default";
-  }
-  if (tagContainer.innerHTML.indexOf("Missed") != -1) {
-    tagContainer.style.backgroundColor = "rgba(251,11,11,.2)";
-  } else {
-    tagContainer.style.display = "none";
-  }
-</script>
 {{/Tags}}
