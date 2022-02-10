@@ -1,0 +1,43 @@
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.card,
+kbd {
+  font-family: Arial Greek, Arial;
+}
+
+.cloze,
+b,
+kbd {
+  font-weight: 700;
+}
+#pic:hover,
+kbd:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.mobile #pic {
+  display: none;
+}
+kbd {
+  font-size: 10px !important;
+  text-shadow: none !important;
+  padding: 0.05rem 0.1rem !important;
+  border-radius: 4px;
+  border-width: 1.5px !important;
+  border-style: solid;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  opacity: 0.5;
+  vertical-align: middle !important;
+  line-height: auto !important;
+  height: auto !important;
+
+  border-color: #fff;
+  color: #fff !important;
+}
