@@ -3,7 +3,7 @@ kbd {
   background-color: #f0f0f0 !important;
 }
 :root {
-  --blue: #77ccff;
+  --blue: #3c97f9;
   --green: hsl(144, 66%, 55%);
 }
 
@@ -15,12 +15,12 @@ body {
   color: #a9adaf !important;
   background-color: #2f2f31 !important;
 }
-:root[class*='night-mode'] {
+:root[class*="night-mode"] {
   --blue: hsl(201, 55%, 58%);
   --green: hsl(144, 26%, 55%);
 }
 
-body[class*='night_mode'] {
+body[class*="night_mode"] {
   color: hsl(180, 10%, 90%) !important;
 }
 
