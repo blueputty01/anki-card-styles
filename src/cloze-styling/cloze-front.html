@@ -40,12 +40,6 @@
   countdown("s2", minutes, seconds); //2nd value is the minute, 3rd is the seconds
 </script>
 
-<script>
-  //DONT FADE BETWEEN CARDS
-  qFade = 0;
-  if (typeof anki !== "undefined") anki.qFade = qFade;
-</script>
-
 {{#Tags}}
 <div id="tags-container">{{clickable::Tags}}</div>
 {{/Tags}}

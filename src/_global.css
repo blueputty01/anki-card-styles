@@ -1,0 +1,66 @@
+kbd {
+  color: hsl(180, 1%, 5%) !important;
+  background-color: #f0f0f0 !important;
+}
+:root {
+  --blue: #77ccff;
+  --green: hsl(144, 66%, 55%);
+}
+
+body {
+  color: hsl(180, 10%, 15%) !important;
+}
+
+.night_mode kbd {
+  color: #a9adaf !important;
+  background-color: #2f2f31 !important;
+}
+:root[class*='night-mode'] {
+  --blue: hsl(201, 55%, 58%);
+  --green: hsl(144, 26%, 55%);
+}
+
+body[class*='night_mode'] {
+  color: hsl(180, 10%, 90%) !important;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#qa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card,
+kbd {
+  font-family: Arial Greek, Arial;
+}
+
+b {
+  font-weight: 700;
+}
+
+kbd {
+  height: auto !important;
+  line-height: auto !important;
+  font-weight: normal;
+  font-size: 1rem !important;
+  text-shadow: none !important;
+  padding: 0.6rem !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+a {
+  text-decoration: underline;
+}

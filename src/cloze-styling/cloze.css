@@ -1,0 +1,28 @@
+@import url('_global.css');
+
+.timer {
+  color: transparent;
+}
+
+.cloze {
+  color: var(--blue);
+}
+
+.cloze {
+  font-weight: 700;
+}
+
+.clozefield {
+  display: block;
+  margin: auto;
+  max-width: 60rem;
+  padding: 0 1em 1em;
+}
+
+#extra {
+  color: var(--blue);
+  font-size: 1rem;
+  margin: auto;
+  max-width: 60rem;
+  padding: 0 1em 1em 0;
+}
