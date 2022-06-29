@@ -8,7 +8,7 @@
 
 - Global stylesheet for all cards, used by importing stylesheet.
 
-- Styles for cloze and basic (front and back) card types.
+- Styles and templates for cloze and basic (front and back) card types.
 
 - Light and dark mode support
 
