@@ -14,7 +14,9 @@
 
 ## Usage notes
 
-Create symbolic link at %APPDATA%\Anki2\User 1\collection.media\.
+All files can be found in ./src folder.
+
+Create symbolic link from %APPDATA%\Anki2\User 1\collection.media\ to global stylesheet in this repository for easy editing and version control.
 
 `mklink %APPDATA%\Anki2\User 1\collection.media\_global.css ./src/_global.css`
 
