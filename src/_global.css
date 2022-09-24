@@ -50,6 +50,12 @@ html {
   justify-content: center;
 }
 
+#qa > div {
+  display: block;
+  margin: auto;
+  max-width: 60rem;
+}
+
 .card,
 kbd {
   font-family: Arial Greek, Arial;
