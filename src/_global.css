@@ -53,7 +53,7 @@ html {
 #qa > div {
   display: block;
   margin: auto;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .card,
