@@ -1,15 +1,13 @@
 <div class="clozefield">{{edit:cloze:Text}}</div>
-
 <!--tts en_US voices=Apple_Samantha speed=1.4:cloze:Text-->
-
 <div class="timer" id="s2"></div>
+
 <script>
   //############## TIMER CONFIGURATION START ##############
   //Set Timer Length
   var minutes = 0;
   var seconds = 9;
   //############## TIMER CONFIGURATION END ##############
-
   function countdown(elementName, minutes, seconds) {
     var element, endTime, hours, mins, msLeft, time;
     function twoDigits(n) {
@@ -38,7 +36,28 @@
   }
   countdown('s2', minutes, seconds); //2nd value is the minute, 3rd is the seconds
 </script>
-
 {{#Tags}}
 <div id="tags-container">{{clickable::Tags}}</div>
 {{/Tags}}
+<!-- auto-scrolling -->
+<script>
+  function scroll_to_cloze() {
+    let mycloze = document.getElementsByClassName('cloze')[0];
+    const element = mycloze;
+    const elementRect = element.getBoundingClientRect();
+    const absoluteElementTop = elementRect.top + window.pageYOffset;
+    const middle = absoluteElementTop - window.innerHeight / 2;
+    window.scrollTo(0, middle);
+  }
+  if (typeof onShownHook !== 'undefined') {
+    //for Anki 2.1.x
+    onShownHook.push(function () {
+      scroll_to_cloze();
+    });
+  } else {
+    // for AnkiDroid
+    setTimeout(function () {
+      scroll_to_cloze();
+    }, 10);
+  }
+</script>
