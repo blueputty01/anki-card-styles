@@ -44,15 +44,8 @@ html {
 }
 
 #qa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#qa > div {
-  display: block;
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
   max-width: 30rem;
 }
 
@@ -63,6 +56,12 @@ kbd {
 
 b {
   font-weight: 700;
+}
+
+#tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 kbd {

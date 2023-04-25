@@ -12,11 +12,20 @@
   font-weight: 700;
 }
 
+.cloze-inactive {
+  font-weight: 600;
+}
+
 .clozefield {
+  display: block;
+  margin: auto;
+  max-width: 60rem;
   padding: 0 1em 1em;
 }
 
 #extra {
   color: var(--blue);
+  margin: auto;
+  max-width: 60rem;
   padding: 0 1em 1em 0;
 }
