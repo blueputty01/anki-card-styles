@@ -1,1 +1,2 @@
-/tests
+venv
+.DS_Store

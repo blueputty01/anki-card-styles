@@ -12,6 +12,17 @@
 
 - Light and dark mode support
 
+### Pygments syntax highlighting
+
+```bash
+python -m venv venv
+pip install pygments
+# Install pygments
+pygmentize -S one-dark -f html -a .codehilite > _syntax.css
+```
+
+move \_syntax.css to anki media collection folder
+
 ## Usage notes
 
 All files can be found in ./src folder.
