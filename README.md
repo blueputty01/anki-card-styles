@@ -12,16 +12,20 @@
 
 - Light and dark mode support
 
-### Pygments syntax highlighting
+### Syntax highlighting
+
+Plug and play with https://github.com/blueputty01/md-to-anki markdown to anki conversion
+
+1. Generate styles from chosen color scheme: https://pygments.org/styles/
 
 ```bash
 python -m venv venv
 pip install pygments
 # Install pygments
 pygmentize -S one-dark -f html -a .codehilite > _syntax.css
-```
+``
 
-move \_syntax.css to anki media collection folder
+2. Move \_syntax.css to anki media collection folder
 
 ## Usage notes
 
