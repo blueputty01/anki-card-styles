@@ -2,6 +2,8 @@ pre {
   line-height: 125%;
   font-size: 0.8rem;
   padding: 1rem;
+  overflow-x: scroll;
+  width: 100%;
 }
 pre:empty {
   display: none;
