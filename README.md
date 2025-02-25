@@ -23,7 +23,7 @@ python -m venv venv
 pip install pygments
 # Install pygments
 pygmentize -S one-dark -f html -a .codehilite > _syntax.css
-``1
+```
 
 2. Move \_syntax.css to anki media collection folder
 
