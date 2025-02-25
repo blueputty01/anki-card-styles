@@ -5,16 +5,23 @@
   color: transparent;
 }
 
-.cloze {
-  color: var(--blue);
-}
+/* .cloze::after {
+  content: ' ';
+  position: absolute;
+  inset: 0;
+  background: hsla(202, 90%, 50%, 0.5);
+  z-index: -1;
+} */
 
 .cloze {
+  color: var(--blue);
   font-weight: 700;
+  position: relative;
 }
 
 .cloze-inactive {
   font-weight: 600;
+  position: relative;
 }
 
 #extra {
